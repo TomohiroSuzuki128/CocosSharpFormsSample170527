@@ -77,7 +77,6 @@
     <Compile Include="AppDelegate.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <BundleResource Include="Content\Images\Sushi.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
