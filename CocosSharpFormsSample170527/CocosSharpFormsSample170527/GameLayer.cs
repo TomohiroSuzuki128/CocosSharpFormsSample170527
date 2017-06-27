@@ -7,7 +7,6 @@ namespace CocosSharpFormsSample
 {
 	public class GameLayer : CCLayerColor
 	{
-		private CCTexture2D sushiTexture;
 		private CCTexture2D tokyoTexture;
 		private CCTexture2D kanagawaTexture;
 		private CCTexture2D saitamaTexture;
@@ -41,7 +40,6 @@ namespace CocosSharpFormsSample
 
 		public GameLayer(CCColor4B? color = default(CCColor4B?)) : base(color)
 		{
-			sushiTexture = new CCSprite("Sushi.png", null).Texture;
 			tokyoTexture = new CCSprite("tokyo.png", null).Texture;
 			kanagawaTexture = new CCSprite("kanagawa.png", null).Texture;
 			saitamaTexture = new CCSprite("saitama.png", null).Texture;
