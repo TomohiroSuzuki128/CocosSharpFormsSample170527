@@ -124,13 +124,7 @@ namespace CocosSharpFormsSample
 
 		public bool CanPlayAnimationTokyo
 		{
-			get
-			{
-				if (tokyoActionState == null)
-					return true;
-				else
-					return tokyoActionState.IsDone;
-			}
+			get { return tokyoActionState == null ? true : tokyoActionState.IsDone; }
 		}
 
 		public void PlayAnimationTokyo()
@@ -151,13 +145,7 @@ namespace CocosSharpFormsSample
 
 		public bool CanPlayAnimationKanagawa
 		{
-			get
-			{
-				if (kanagawaActionState == null)
-					return true;
-				else
-					return kanagawaActionState.IsDone;
-			}
+			get { return kanagawaActionState == null ? true : kanagawaActionState.IsDone; }
 		}
 
 		public void PlayAnimationKanagawa()
@@ -177,13 +165,7 @@ namespace CocosSharpFormsSample
 
 		public bool CanPlayAnimationSaitama
 		{
-			get
-			{
-				if (saitamaActionState == null)
-					return true;
-				else
-					return saitamaActionState.IsDone;
-			}
+			get { return saitamaActionState == null ? true : saitamaActionState.IsDone; }
 		}
 
 		public void PlayAnimationSaitama()
@@ -204,13 +186,7 @@ namespace CocosSharpFormsSample
 
 		public bool CanPlayAnimationChiba
 		{
-			get
-			{
-				if (chibaActionState == null)
-					return true;
-				else
-					return chibaActionState.IsDone;
-			}
+			get { return chibaActionState == null ? true : chibaActionState.IsDone; }
 		}
 
 		public void PlayAnimationChiba()
@@ -229,13 +205,7 @@ namespace CocosSharpFormsSample
 
 		public bool CanPlayAnimationGunma
 		{
-			get
-			{
-				if (gunmaActionState == null)
-					return true;
-				else
-					return gunmaActionState.IsDone;
-			}
+			get { return gunmaActionState == null ? true : gunmaActionState.IsDone; }
 		}
 
 		public void PlayAnimationGunma()
@@ -249,13 +219,7 @@ namespace CocosSharpFormsSample
 
 		public bool CanPlayAnimationTochigi
 		{
-			get
-			{
-				if (tochigiActionState == null)
-					return true;
-				else
-					return tochigiActionState.IsDone;
-			}
+			get { return tochigiActionState == null ? true : tochigiActionState.IsDone; }
 		}
 
 		public void PlayAnimationTochigi()
@@ -268,20 +232,13 @@ namespace CocosSharpFormsSample
 				scaleLarge,
 				scaleOrigin,
 				new CCCallFunc(() => tochigiSprite.ZOrder = 0),
-				new CCCallFunc(() => Debug.WriteLine(tochigiSprite.ZOrder))
 				);
 			tochigiActionState = tochigiSprite.RunAction(sequence);
 		}
 
 		public bool CanPlayAnimationIbaraki
 		{
-			get
-			{
-				if (ibarakiActionState == null)
-					return true;
-				else
-					return ibarakiActionState.IsDone;
-			}
+			get { return ibarakiActionState == null ? true : ibarakiActionState.IsDone; }
 		}
 
 		public void PlayAnimationIbaraki()
@@ -293,7 +250,6 @@ namespace CocosSharpFormsSample
 				new CCCallFunc(() => ibarakiSprite.ZOrder = 1000),
 				rotate,
 				new CCCallFunc(() => ibarakiSprite.ZOrder = 0),
-				new CCCallFunc(() => Debug.WriteLine(ibarakiSprite.ZOrder))
 				);
 			ibarakiActionState = ibarakiSprite.RunAction(sequence);
 		}
