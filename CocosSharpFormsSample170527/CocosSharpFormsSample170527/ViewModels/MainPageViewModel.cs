@@ -7,7 +7,7 @@ namespace CocosSharpFormsSample.ViewModels
 	public class MainPageViewModel : BindableBase
 	{
 
-		public GameScene GameScene { get; private set; }
+		public GameScene GameScene { get; set; }
 
 		public DelegateCommand TokyoCommand => new DelegateCommand(() => GameScene.PlayAnimationTokyo());
 		public DelegateCommand KanagawaCommand => new DelegateCommand(() => GameScene.PlayAnimationKanagawa());
